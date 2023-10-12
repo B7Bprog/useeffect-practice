@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 /* TASK 3 Fix another infinite loop
 
-- For this you will need to 'fix' the useEffect() call to avoid an infinite loop. After the page is loop is fixed and the page is re-rendered, you should see the following displayed: 'Counter = 1'. Think about what the problem is with the current setup of useEffect and why it results in infinite re-renders. Use the console in the browser to get a hint from the error message. Once you have a solution, refresh the page to see if the infinite loop has been eliminated. */
+- For this you will need to 'fix' the useEffect() call to avoid an infinite loop. After the page's  loop is fixed and the page is re-rendered, you should see the following displayed: 'Counter = 1'. Think about what the problem is with the current setup of useEffect and why it results in infinite re-renders. Use the console in the browser to get a hint from the error message. Once you have a solution, refresh the page to see if the infinite loop has been eliminated. */
 
 const Task3 = () => {
   const [counter, setCounter] = useState(0);

@@ -4,7 +4,7 @@ import styles from "../styles/Task4.module.css";
 
 /* TASK 4 Trigger confetti with all buttons
 
-- Here you need to make sure that you can trigger the confetti with each button */
+- Here you need to make sure that you can trigger the confetti with each button. Disabled buttons should be avoided for accessibility purposes, but we are using this attribute here to create an example you can test out with a useEffect(). */
 
 const Task4 = () => {
   const [sprinkle, setSprinkle] = useState(false);
@@ -21,10 +21,10 @@ const Task4 = () => {
       setSprinkle(false);
     }, 3000);
     setAreButtonsEnabled(true);
-  }, []);
+  }, [toggleButton1, toggleButton2, toggleButton3, toggleButton4]);
 
   return (
-    <div>
+    <section>
       {sprinkle ? (
         <div className={styles.confetti}>
           <Confetti
@@ -71,7 +71,7 @@ const Task4 = () => {
           Click me
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,23 +1,13 @@
-import { useState } from "react";
-
 import "./App.css";
-import Task1 from "./components/Task1";
-import Task2 from "./components/Task2";
-import Task3 from "./components/Task3";
-import Task4 from "./components/Task4";
 
 function App() {
-  /* Start off by reading the description in the component (inside 'components' folder. Render the tasks to the screen by uncommenting them, one at a time. When you move on to the next task, comment out the one you've completed */
-  return (
-    <div className="mainPageContent">
-      <h1>useEffect() - Practice</h1>
-      {/* Uncomment only one task at a time */}
+  /* Start off by reading the task description in the component (inside the 'components' folder). Render the tasks to the screen one by one. When you move on to the next task, comment out the one you've completed to allow you to focus and to avoid too many errors at once. */
 
-      {/* <Task1 /> */}
-      {/* <Task2 /> */}
-      {/* <Task3 /> */}
-      {/* <Task4 /> */}
-    </div>
+  return (
+    <main id="mainPageContent">
+      <h1>useEffect() - Practice</h1>
+      {/* Add tasks here */}
+    </main>
   );
 }
 

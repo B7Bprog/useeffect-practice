@@ -6,7 +6,7 @@
   /* border: solid rgb(125, 0, 0);
   background-color: yellow; */
 }
-.mainPageContent {
+#mainPageContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

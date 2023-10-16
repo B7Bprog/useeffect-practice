@@ -8,16 +8,15 @@ import styles from "../styles/Task1.module.css";
 
 const Task1 = () => {
   const [catImage, setCatImage] = useState({});
-  const [count, setCount] = useState(false);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    //Do not change anything in the axios call
+    //Do not change anything inside this callback function
     axios.get("https://api.thecatapi.com/v1/images/search").then(({ data }) => {
       setCatImage(data[0].url);
+      console.log(count, "<<<< count");
     });
   }, []);
-
-  console.log(count);
 
   const handleClick = () => {
     setCount((currentCount) => currentCount + 1);
